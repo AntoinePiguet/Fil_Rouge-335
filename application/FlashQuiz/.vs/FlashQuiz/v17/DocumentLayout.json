@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pn01kbc\\Documents\\MODULE T4\\P_335-Ferrari\\Fil_Rouge-335\\application\\FlashQuiz\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{77E69872-FD8F-45B0-A537-E795B931BF97}|FlashQuiz.csproj|c:\\users\\pn01kbc\\documents\\module t4\\p_335-ferrari\\fil_rouge-335\\application\\flashquiz\\dumbutton.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{77E69872-FD8F-45B0-A537-E795B931BF97}|FlashQuiz.csproj|solutionrelative:dumbutton.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77E69872-FD8F-45B0-A537-E795B931BF97}|FlashQuiz.csproj|c:\\users\\pn01kbc\\documents\\module t4\\p_335-ferrari\\fil_rouge-335\\application\\flashquiz\\viewmodels\\mvvm1viewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77E69872-FD8F-45B0-A537-E795B931BF97}|FlashQuiz.csproj|solutionrelative:viewmodels\\mvvm1viewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77E69872-FD8F-45B0-A537-E795B931BF97}|FlashQuiz.csproj|c:\\users\\pn01kbc\\documents\\module t4\\p_335-ferrari\\fil_rouge-335\\application\\flashquiz\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77E69872-FD8F-45B0-A537-E795B931BF97}|FlashQuiz.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77E69872-FD8F-45B0-A537-E795B931BF97}|FlashQuiz.csproj|c:\\users\\pn01kbc\\documents\\module t4\\p_335-ferrari\\fil_rouge-335\\application\\flashquiz\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{77E69872-FD8F-45B0-A537-E795B931BF97}|FlashQuiz.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77E69872-FD8F-45B0-A537-E795B931BF97}|FlashQuiz.csproj|c:\\users\\pn01kbc\\documents\\module t4\\p_335-ferrari\\fil_rouge-335\\application\\flashquiz\\dumbutton.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77E69872-FD8F-45B0-A537-E795B931BF97}|FlashQuiz.csproj|solutionrelative:dumbutton.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77E69872-FD8F-45B0-A537-E795B931BF97}|FlashQuiz.csproj|c:\\users\\pn01kbc\\documents\\module t4\\p_335-ferrari\\fil_rouge-335\\application\\flashquiz\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{77E69872-FD8F-45B0-A537-E795B931BF97}|FlashQuiz.csproj|solutionrelative:appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77E69872-FD8F-45B0-A537-E795B931BF97}|FlashQuiz.csproj|c:\\users\\pn01kbc\\documents\\module t4\\p_335-ferrari\\fil_rouge-335\\application\\flashquiz\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77E69872-FD8F-45B0-A537-E795B931BF97}|FlashQuiz.csproj|solutionrelative:appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77E69872-FD8F-45B0-A537-E795B931BF97}|FlashQuiz.csproj|c:\\users\\pn01kbc\\documents\\module t4\\p_335-ferrari\\fil_rouge-335\\application\\flashquiz\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77E69872-FD8F-45B0-A537-E795B931BF97}|FlashQuiz.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77E69872-FD8F-45B0-A537-E795B931BF97}|FlashQuiz.csproj|c:\\users\\pn01kbc\\documents\\module t4\\p_335-ferrari\\fil_rouge-335\\application\\flashquiz\\create.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77E69872-FD8F-45B0-A537-E795B931BF97}|FlashQuiz.csproj|solutionrelative:create.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77E69872-FD8F-45B0-A537-E795B931BF97}|FlashQuiz.csproj|c:\\users\\pn01kbc\\documents\\module t4\\p_335-ferrari\\fil_rouge-335\\application\\flashquiz\\create.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{77E69872-FD8F-45B0-A537-E795B931BF97}|FlashQuiz.csproj|solutionrelative:create.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Mvvm1ViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\pn01kbc\\Documents\\MODULE T4\\P_335-Ferrari\\Fil_Rouge-335\\application\\FlashQuiz\\ViewModels\\Mvvm1ViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\Mvvm1ViewModel.cs",
+              "ToolTip": "C:\\Users\\pn01kbc\\Documents\\MODULE T4\\P_335-Ferrari\\Fil_Rouge-335\\application\\FlashQuiz\\ViewModels\\Mvvm1ViewModel.cs",
+              "RelativeToolTip": "ViewModels\\Mvvm1ViewModel.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T09:59:01.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\pn01kbc\\Documents\\MODULE T4\\P_335-Ferrari\\Fil_Rouge-335\\application\\FlashQuiz\\MainPage.xaml",
+              "RelativeDocumentMoniker": "MainPage.xaml",
+              "ToolTip": "C:\\Users\\pn01kbc\\Documents\\MODULE T4\\P_335-Ferrari\\Fil_Rouge-335\\application\\FlashQuiz\\MainPage.xaml",
+              "RelativeToolTip": "MainPage.xaml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB8AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-04T09:52:11.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Dumbutton.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pn01kbc\\Documents\\MODULE T4\\P_335-Ferrari\\Fil_Rouge-335\\application\\FlashQuiz\\Dumbutton.xaml.cs",
+              "RelativeDocumentMoniker": "Dumbutton.xaml.cs",
+              "ToolTip": "C:\\Users\\pn01kbc\\Documents\\MODULE T4\\P_335-Ferrari\\Fil_Rouge-335\\application\\FlashQuiz\\Dumbutton.xaml.cs",
+              "RelativeToolTip": "Dumbutton.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T09:47:59.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dumbutton.xaml",
+              "DocumentMoniker": "C:\\Users\\pn01kbc\\Documents\\MODULE T4\\P_335-Ferrari\\Fil_Rouge-335\\application\\FlashQuiz\\Dumbutton.xaml",
+              "RelativeDocumentMoniker": "Dumbutton.xaml",
+              "ToolTip": "C:\\Users\\pn01kbc\\Documents\\MODULE T4\\P_335-Ferrari\\Fil_Rouge-335\\application\\FlashQuiz\\Dumbutton.xaml",
+              "RelativeToolTip": "Dumbutton.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-04T09:47:34.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Create.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pn01kbc\\Documents\\MODULE T4\\P_335-Ferrari\\Fil_Rouge-335\\application\\FlashQuiz\\Create.xaml.cs",
+              "RelativeDocumentMoniker": "Create.xaml.cs",
+              "ToolTip": "C:\\Users\\pn01kbc\\Documents\\MODULE T4\\P_335-Ferrari\\Fil_Rouge-335\\application\\FlashQuiz\\Create.xaml.cs",
+              "RelativeToolTip": "Create.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T09:08:40.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pn01kbc\\Documents\\MODULE T4\\P_335-Ferrari\\Fil_Rouge-335\\application\\FlashQuiz\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\pn01kbc\\Documents\\MODULE T4\\P_335-Ferrari\\Fil_Rouge-335\\application\\FlashQuiz\\MainPage.xaml.cs",
+              "RelativeToolTip": "MainPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T09:05:23.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pn01kbc\\Documents\\MODULE T4\\P_335-Ferrari\\Fil_Rouge-335\\application\\FlashQuiz\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Users\\pn01kbc\\Documents\\MODULE T4\\P_335-Ferrari\\Fil_Rouge-335\\application\\FlashQuiz\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T08:47:22.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pn01kbc\\Documents\\MODULE T4\\P_335-Ferrari\\Fil_Rouge-335\\application\\FlashQuiz\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "AppShell.xaml.cs",
+              "ToolTip": "C:\\Users\\pn01kbc\\Documents\\MODULE T4\\P_335-Ferrari\\Fil_Rouge-335\\application\\FlashQuiz\\AppShell.xaml.cs",
+              "RelativeToolTip": "AppShell.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T08:47:14.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\pn01kbc\\Documents\\MODULE T4\\P_335-Ferrari\\Fil_Rouge-335\\application\\FlashQuiz\\AppShell.xaml",
+              "RelativeDocumentMoniker": "AppShell.xaml",
+              "ToolTip": "C:\\Users\\pn01kbc\\Documents\\MODULE T4\\P_335-Ferrari\\Fil_Rouge-335\\application\\FlashQuiz\\AppShell.xaml",
+              "RelativeToolTip": "AppShell.xaml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-04T08:47:11.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Create.xaml",
+              "DocumentMoniker": "C:\\Users\\pn01kbc\\Documents\\MODULE T4\\P_335-Ferrari\\Fil_Rouge-335\\application\\FlashQuiz\\Create.xaml",
+              "RelativeDocumentMoniker": "Create.xaml",
+              "ToolTip": "C:\\Users\\pn01kbc\\Documents\\MODULE T4\\P_335-Ferrari\\Fil_Rouge-335\\application\\FlashQuiz\\Create.xaml",
+              "RelativeToolTip": "Create.xaml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABcAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-04T09:06:54.125Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

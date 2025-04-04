@@ -16,3 +16,15 @@ cette nav est propre à MAUI à définir dans le AppShell
 - flyout = navigation en slide dans un AppShell=> permet de slide d'une page à l'autre
 
 **Balise Flyout où on mets des tabs, pas l'inverse**
+
+les questions
+
+- 1. le nom de l'application et les 2 types de navigations
+     - AppShell, tabulation, flyout
+- 2. avec une navigation standard comment naviguer d'une page à l'autre
+     - avec push() et pop()
+- 3. citer les 4 layouts de base et leur comportement
+     - absolute => pas résponsive mais on peut empiler les éléments
+     - stack => empilé, choicir si stack horizontal/vertical
+     - griles => définir une grille ou l'on va positionner ses éléments, on doit définir le nombre de lignes et colonnes
+     - flex => éléments disposés automatiquement, ressemble au grid mais sans définir le nbmr de colonnes ou lignes et s'adapte auto a la taille de l'écran. grille automatique

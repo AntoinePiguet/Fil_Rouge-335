@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlashQuiz.Create"
+             Title="Create"
+             BackgroundColor="White">
+    <VerticalStackLayout Spacing="20">
+        <Label 
+            Text="FlashQuiz"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" WidthRequest="100" HeightRequest="50" TextColor="Black" Padding="10" FontAttributes="Bold"/>
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Border Stroke="Transparent">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="30" />
+                </Border.StrokeShape>
+                <Label Text="Question . . ."  WidthRequest="380" HeightRequest="40" BackgroundColor="#D9D9D9" TextColor="#6F6767" Padding="10" FontAttributes="Bold"/>
+            </Border>
+        </HorizontalStackLayout>
+        
+        <HorizontalStackLayout HorizontalOptions="Center" >
+            <Border Stroke="Transparent">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="20" />
+                </Border.StrokeShape>
+                <Label Text="Réponse . . ." WidthRequest="380" HeightRequest="250" BackgroundColor="#D9D9D9" TextColor="#6F6767" Padding="10" FontAttributes="Bold"/>
+            </Border>
+        </HorizontalStackLayout>
+        
+        <HorizontalStackLayout HorizontalOptions="End">
+            <Button Text="Create" VerticalOptions="Start" HorizontalOptions="Start" WidthRequest="100" HeightRequest="40" BackgroundColor="#78D390" Margin="60" TextColor="White" FontAttributes="Bold"/>
+        </HorizontalStackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>
