@@ -6,18 +6,34 @@
     xmlns:local="clr-namespace:FlashQuiz"
     Shell.FlyoutBehavior="Disabled">
     <TabBar>
-        <ShellContent
+        <Tab Icon="group46.png" >
+            <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        />
+        </Tab>
+        <Tab Icon="group47.png">
             <ShellContent
         Title="Create"
         ContentTemplate="{DataTemplate local:Create}"
          />
-        <ShellContent
+        </Tab>
+
+        <Tab Icon="group48.png">
+            <ShellContent
         Title="Dumbutton"
         ContentTemplate="{DataTemplate local:Dumbutton}"
          />
+        </Tab>
+
+        <Tab Icon="group45.png">
+            <ShellContent
+        Title="List"
+        ContentTemplate="{DataTemplate local:List}"
+         />
+        </Tab>
+
+
 
     </TabBar>
 

@@ -4,5 +4,75 @@
         <name>FlashQuiz</name>
     </assembly>
     <members>
+        <member name="T:FlashQuiz.ViewModels.Mvvm1ViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:FlashQuiz.ViewModels.Mvvm1ViewModel.Counter">
+            <inheritdoc cref="F:FlashQuiz.ViewModels.Mvvm1ViewModel.counter"/>
+        </member>
+        <member name="P:FlashQuiz.ViewModels.Mvvm1ViewModel.Wishes">
+            <inheritdoc cref="F:FlashQuiz.ViewModels.Mvvm1ViewModel.wishes"/>
+        </member>
+        <member name="P:FlashQuiz.ViewModels.Mvvm1ViewModel.WishEntry">
+            <inheritdoc cref="F:FlashQuiz.ViewModels.Mvvm1ViewModel.wishEntry"/>
+        </member>
+        <member name="F:FlashQuiz.ViewModels.Mvvm1ViewModel.incrementCommand">
+            <summary>The backing field for <see cref="P:FlashQuiz.ViewModels.Mvvm1ViewModel.IncrementCommand"/>.</summary>
+        </member>
+        <member name="P:FlashQuiz.ViewModels.Mvvm1ViewModel.IncrementCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:FlashQuiz.ViewModels.Mvvm1ViewModel.Increment(System.Int32)"/>.</summary>
+        </member>
+        <member name="F:FlashQuiz.ViewModels.Mvvm1ViewModel.addWishCommand">
+            <summary>The backing field for <see cref="P:FlashQuiz.ViewModels.Mvvm1ViewModel.AddWishCommand"/>.</summary>
+        </member>
+        <member name="P:FlashQuiz.ViewModels.Mvvm1ViewModel.AddWishCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:FlashQuiz.ViewModels.Mvvm1ViewModel.AddWish(System.String)"/>.</summary>
+        </member>
+        <member name="F:FlashQuiz.ViewModels.Mvvm1ViewModel.editCommand">
+            <summary>The backing field for <see cref="P:FlashQuiz.ViewModels.Mvvm1ViewModel.EditCommand"/>.</summary>
+        </member>
+        <member name="P:FlashQuiz.ViewModels.Mvvm1ViewModel.EditCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:FlashQuiz.ViewModels.Mvvm1ViewModel.Edit(FlashQuiz.Models.Wish)"/>.</summary>
+        </member>
+        <member name="F:FlashQuiz.ViewModels.Mvvm1ViewModel.deleteCommand">
+            <summary>The backing field for <see cref="P:FlashQuiz.ViewModels.Mvvm1ViewModel.DeleteCommand"/>.</summary>
+        </member>
+        <member name="P:FlashQuiz.ViewModels.Mvvm1ViewModel.DeleteCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:FlashQuiz.ViewModels.Mvvm1ViewModel.Delete(FlashQuiz.Models.Wish)"/>.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Counter">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Counter" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Wishes">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Wishes" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.WishEntry">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "WishEntry" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Counter">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Counter" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Wishes">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Wishes" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.WishEntry">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "WishEntry" generated properties.</summary>
+        </member>
     </members>
 </doc>

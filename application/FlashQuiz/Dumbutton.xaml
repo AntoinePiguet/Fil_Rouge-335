@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ViewModels="clr-namespace:FlashQuiz.ViewModels"
              x:Class="FlashQuiz.Dumbutton"
+             xmlns:s="clr-namespace:System;assembly=mscorlib"
              Title="Dumbutton"
              
              >
@@ -21,6 +22,6 @@
             <Button.CommandParameter>
                 <s:Int32>5</s:Int32>
             </Button.CommandParameter>
-       <Button/>
+        </Button>
     </VerticalStackLayout>
 </ContentPage>

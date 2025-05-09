@@ -40,6 +40,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = FlashQuiz.Dumbutton.xaml
 build_metadata.AdditionalFiles.TargetPath = Dumbutton.xaml
 build_metadata.AdditionalFiles.RelativePath = Dumbutton.xaml
 
+[C:/Users/pn01kbc/Documents/MODULE T4/P_335-Ferrari/Fil_Rouge-335/application/FlashQuiz/List.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FlashQuiz.List.xaml
+build_metadata.AdditionalFiles.TargetPath = List.xaml
+build_metadata.AdditionalFiles.RelativePath = List.xaml
+
 [C:/Users/pn01kbc/Documents/MODULE T4/P_335-Ferrari/Fil_Rouge-335/application/FlashQuiz/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = FlashQuiz.MainPage.xaml
