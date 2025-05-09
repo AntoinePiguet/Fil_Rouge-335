@@ -11,14 +11,14 @@ namespace FlashQuiz.Services
 {
     public class AladdinContext: DbContext
     {
-        public DbSet<Wish> Wishes { get; set; }
+        public DbSet<Card> Cards { get; set; }
         public AladdinContext()
         {
             this.Database.EnsureCreated();
         }
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            string dbPath = Path.Combine(FileSystem.AppDataDirectory, "aladdin.sqlite");
+            string dbPath = Path.Combine(FileSystem.AppDataDirectory, "flashquiz.sqlite");
             options.UseSqlite($"Filename={dbPath}");
         }
     }

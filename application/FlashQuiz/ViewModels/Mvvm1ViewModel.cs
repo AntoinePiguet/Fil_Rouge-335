@@ -25,68 +25,71 @@ namespace FlashQuiz.ViewModels
         }
 
         [ObservableProperty]
-        private ObservableCollection<Wish> wishes = new() {};
+        private ObservableCollection<Card> cards = new() {};
 
         [ObservableProperty]
-        [NotifyCanExecuteChangedFor(nameof(AddWishCommand))]
-        private string wishEntry = "";
+        private string titre;
 
+        [ObservableProperty]
+        private string definition;
 
-        [RelayCommand(CanExecute = nameof(AddWishCanExecute))]
-        private async Task AddWish(string definition)
+        [RelayCommand(CanExecute = nameof(AddCardCanExecute))]
+        private async Task AddCard()
         {
-            var wish = new Wish { Definition = definition };
+            var card = new Card { Titre = Titre, Definition = Definition };
             using (var dbContext = new AladdinContext())
             {
-                dbContext.Add(wish);
+                dbContext.Add(card);
                 await dbContext.SaveChangesAsync();
             }
-            Wishes.Add(wish);
-            WishEntry = "";
+            Cards.Add(card);
+            Titre = string.Empty;
+            Definition = string.Empty;
         }
-        private bool AddWishCanExecute()
+        private bool AddCardCanExecute()
         {
-            //Trace.WriteLine("toto");
-
-            return !string.IsNullOrEmpty(WishEntry);
+            return !string.IsNullOrEmpty(Titre) && !string.IsNullOrEmpty(Definition);
         }
 
         public Mvvm1ViewModel()
         {
-            RefreshWishesFromDB();
+            RefreshCardsFromDB();
         }
-        private void RefreshWishesFromDB(AladdinContext? context=null)
+        private void RefreshCardsFromDB(AladdinContext? context=null)
         {
-            Wishes.Clear();
+            Cards.Clear();
             using (var dbContext = context??new AladdinContext())
             {
-                foreach (var dbWish in dbContext.Wishes) 
+                foreach (var dbCard in dbContext.Cards) 
                 {
-                    Wishes.Add(dbWish);
+                    Cards.Add(dbCard);
                 }
             }
         }
 
         [RelayCommand]
-        private async Task Edit(Wish wish)
+        private async Task Edit(Card card)
         {
-            Trace.WriteLine($"Editing {wish}");
+            Trace.WriteLine($"Editing {card}");
 
             //Affiche un popup pour demander la modification
-            // /!\ Court-circuite MVVM mais toléré pour ne pas ajouter plus de complexité pour l’instant/!\
-            string updatedDefinition = await Shell.Current.DisplayPromptAsync(title: "Modifier ", message: "", placeholder: wish.Definition);
+            // /!\ Court-circuite MVVM mais toléré pour ne pas ajouter plus de complexité pour l'instant/!\
+            string updatedDefinition = await Shell.Current.DisplayPromptAsync(title: "Modifier ", message: "", placeholder:card.Definition);
+            string updatedTitre = await Shell.Current.DisplayPromptAsync(title: "Modifier ", message: "", placeholder: card.Titre);
 
-            //Si l’utilisateur n’appuie pas sur Cancel
-            if (updatedDefinition != null)
+            //Si l'utilisateur n'appuie pas sur Cancel
+            if (updatedDefinition != null && updatedTitre != null)
             {
                 using (var dbContext = new AladdinContext())
                 {
                     //TODO : Faire la mise à jour uniquement si la définition a changé
 
-                    await dbContext.Wishes
-                        .Where(dbWish => dbWish.Id == wish.Id)
-                        .ExecuteUpdateAsync(setters => setters.SetProperty(dbWish => dbWish.Definition, updatedDefinition));
-
+                    await dbContext.Cards
+                        .Where(dbCard => dbCard.Id == card.Id)
+                        .ExecuteUpdateAsync(setters => setters
+                                .SetProperty(dbCard => dbCard.Definition, updatedDefinition)
+                                .SetProperty(dbCard => dbCard.Titre, updatedTitre)
+                            );
                     /* Version "old style" moins optimale laissée à des fins pédagogiques
                     var dbWish = dbContext.Wishes.Single(dbWish => dbWish.Id== wish.Id);
                     dbWish.Definition = updatedDefinition;
@@ -94,20 +97,20 @@ namespace FlashQuiz.ViewModels
                     */
 
                     //Et on rafraîchit la liste locale
-                    RefreshWishesFromDB(dbContext);
+                    RefreshCardsFromDB(dbContext);
                 }
             }
         }
         [RelayCommand]
-        private async Task Delete(Wish wish)
+        private async Task Delete(Card card)
         {
-            Trace.WriteLine($"Delete {wish.Id}");
+            Trace.WriteLine($"Delete {card.Id}");
             using(var dbContext = new AladdinContext())
             {
-                await dbContext.Wishes
-                    .Where(dbWish => dbWish.Id == wish.Id)
+                await dbContext.Cards
+                    .Where(dbCard => dbCard.Id == card.Id)
                     .ExecuteDeleteAsync();
-                RefreshWishesFromDB(dbContext);
+                RefreshCardsFromDB(dbContext);
             }
         }
 

@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace FlashQuiz.Models
 {
-    public class Wish
+    public class Card
     {
         public int Id { get; set; }
+        public string? Titre { get; set; }
         public string? Definition { get; set; }
         public DateTime AccomplishedDate { get; set; }
         public override string ToString()
         {
-            return $"[Wish {Id}]";
+            return $"[Card {Id}]";
         }
     }
 }

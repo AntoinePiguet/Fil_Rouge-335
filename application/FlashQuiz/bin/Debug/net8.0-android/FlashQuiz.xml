@@ -14,11 +14,14 @@
         <member name="P:FlashQuiz.ViewModels.Mvvm1ViewModel.Counter">
             <inheritdoc cref="F:FlashQuiz.ViewModels.Mvvm1ViewModel.counter"/>
         </member>
-        <member name="P:FlashQuiz.ViewModels.Mvvm1ViewModel.Wishes">
-            <inheritdoc cref="F:FlashQuiz.ViewModels.Mvvm1ViewModel.wishes"/>
+        <member name="P:FlashQuiz.ViewModels.Mvvm1ViewModel.Cards">
+            <inheritdoc cref="F:FlashQuiz.ViewModels.Mvvm1ViewModel.cards"/>
         </member>
-        <member name="P:FlashQuiz.ViewModels.Mvvm1ViewModel.WishEntry">
-            <inheritdoc cref="F:FlashQuiz.ViewModels.Mvvm1ViewModel.wishEntry"/>
+        <member name="P:FlashQuiz.ViewModels.Mvvm1ViewModel.Titre">
+            <inheritdoc cref="F:FlashQuiz.ViewModels.Mvvm1ViewModel.titre"/>
+        </member>
+        <member name="P:FlashQuiz.ViewModels.Mvvm1ViewModel.Definition">
+            <inheritdoc cref="F:FlashQuiz.ViewModels.Mvvm1ViewModel.definition"/>
         </member>
         <member name="F:FlashQuiz.ViewModels.Mvvm1ViewModel.incrementCommand">
             <summary>The backing field for <see cref="P:FlashQuiz.ViewModels.Mvvm1ViewModel.IncrementCommand"/>.</summary>
@@ -26,23 +29,23 @@
         <member name="P:FlashQuiz.ViewModels.Mvvm1ViewModel.IncrementCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:FlashQuiz.ViewModels.Mvvm1ViewModel.Increment(System.Int32)"/>.</summary>
         </member>
-        <member name="F:FlashQuiz.ViewModels.Mvvm1ViewModel.addWishCommand">
-            <summary>The backing field for <see cref="P:FlashQuiz.ViewModels.Mvvm1ViewModel.AddWishCommand"/>.</summary>
+        <member name="F:FlashQuiz.ViewModels.Mvvm1ViewModel.addCardCommand">
+            <summary>The backing field for <see cref="P:FlashQuiz.ViewModels.Mvvm1ViewModel.AddCardCommand"/>.</summary>
         </member>
-        <member name="P:FlashQuiz.ViewModels.Mvvm1ViewModel.AddWishCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:FlashQuiz.ViewModels.Mvvm1ViewModel.AddWish(System.String)"/>.</summary>
+        <member name="P:FlashQuiz.ViewModels.Mvvm1ViewModel.AddCardCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:FlashQuiz.ViewModels.Mvvm1ViewModel.AddCard"/>.</summary>
         </member>
         <member name="F:FlashQuiz.ViewModels.Mvvm1ViewModel.editCommand">
             <summary>The backing field for <see cref="P:FlashQuiz.ViewModels.Mvvm1ViewModel.EditCommand"/>.</summary>
         </member>
         <member name="P:FlashQuiz.ViewModels.Mvvm1ViewModel.EditCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:FlashQuiz.ViewModels.Mvvm1ViewModel.Edit(FlashQuiz.Models.Wish)"/>.</summary>
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:FlashQuiz.ViewModels.Mvvm1ViewModel.Edit(FlashQuiz.Models.Card)"/>.</summary>
         </member>
         <member name="F:FlashQuiz.ViewModels.Mvvm1ViewModel.deleteCommand">
             <summary>The backing field for <see cref="P:FlashQuiz.ViewModels.Mvvm1ViewModel.DeleteCommand"/>.</summary>
         </member>
         <member name="P:FlashQuiz.ViewModels.Mvvm1ViewModel.DeleteCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:FlashQuiz.ViewModels.Mvvm1ViewModel.Delete(FlashQuiz.Models.Wish)"/>.</summary>
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:FlashQuiz.ViewModels.Mvvm1ViewModel.Delete(FlashQuiz.Models.Card)"/>.</summary>
         </member>
         <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
             <summary>
@@ -53,11 +56,14 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Counter">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Counter" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Wishes">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Wishes" generated properties.</summary>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Cards">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Cards" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.WishEntry">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "WishEntry" generated properties.</summary>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Titre">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Titre" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Definition">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Definition" generated properties.</summary>
         </member>
         <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
             <summary>
@@ -68,11 +74,14 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Counter">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Counter" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Wishes">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Wishes" generated properties.</summary>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Cards">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Cards" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.WishEntry">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "WishEntry" generated properties.</summary>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Titre">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Titre" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Definition">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Definition" generated properties.</summary>
         </member>
     </members>
 </doc>

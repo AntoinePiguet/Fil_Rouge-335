@@ -10,9 +10,6 @@
     <MauiXaml Update="Create.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Dumbutton.xaml">
-      <SubType>Designer</SubType>
-    </MauiXaml>
     <MauiXaml Update="List.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

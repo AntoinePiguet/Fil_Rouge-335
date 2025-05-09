@@ -272,6 +272,9 @@ C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\Fla
 C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mauifont.inputs
 C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mauisplash.inputs
 C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mauisplash.stamp
+C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\edit@3x.png
+C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\edit@2x.png
+C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\edit.png
 C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appiconItunesArtwork.png
 C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon83.5x83.5@2x.png
 C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon76x76@2x.png
@@ -284,6 +287,10 @@ C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\Fla
 C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@3x.png
 C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@2x.png
 C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\Contents.json
+C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\group47.png
+C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\group46.png
+C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\group45.png
+C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\group48.png
 C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\dotnet_bot@3x.png
 C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\dotnet_bot@2x.png
 C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\dotnet_bot.png

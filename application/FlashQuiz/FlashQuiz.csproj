@@ -72,9 +72,6 @@
 	  <MauiXaml Update="Create.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Dumbutton.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
 	  <MauiXaml Update="List.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

@@ -19,13 +19,6 @@
          />
         </Tab>
 
-        <Tab Icon="group48.png">
-            <ShellContent
-        Title="Dumbutton"
-        ContentTemplate="{DataTemplate local:Dumbutton}"
-         />
-        </Tab>
-
         <Tab Icon="group45.png">
             <ShellContent
         Title="List"
