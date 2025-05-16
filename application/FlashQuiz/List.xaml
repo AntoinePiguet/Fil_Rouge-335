@@ -9,58 +9,43 @@
         <ViewModels:Mvvm1ViewModel x:Name="vm"/>
     </ContentPage.BindingContext>
 
-    <VerticalStackLayout BackgroundColor="Gray">
-        <Label 
-            Text="FlashQuiz"
-            VerticalOptions="Center"
-            HorizontalOptions="Center" FontAttributes="Bold" FontSize="Title" />
+    <VerticalStackLayout Spacing="10" BackgroundColor="#d9d9d9">
 
-        <VerticalStackLayout Spacing="10" Padding="10" >
-            <Label Text="Ajoutez une carte" VerticalTextAlignment="Center" />
-            <Entry Text="{Binding Titre}" Placeholder="Titre" MinimumWidthRequest="300"/>
-            <Entry Text="{Binding Definition}" Placeholder="Définition" MinimumWidthRequest="300"/>
-        </VerticalStackLayout>
 
-        <Button x:Name="AddButton"
-                Text="Ajouter"
-                Command="{Binding AddCardCommand}"
-                MaximumWidthRequest="300"
-                IsEnabled="{Binding Source={x:Reference AddButton}, Path=Command.CanExecute}">
-            <Button.Triggers>
-                <Trigger TargetType="Button" Property="IsEnabled" Value="True">
-                    <Setter Property="BackgroundColor" Value="Green" />
-                </Trigger>
-                <Trigger TargetType="Button" Property="IsEnabled" Value="False">
-                    <Setter Property="BackgroundColor" Value="Gray" />
-                </Trigger>
-            </Button.Triggers>
-        </Button>
-
-        <Label Text="Contenu de la lampe magique" FontSize="Subtitle" HorizontalTextAlignment="Center" Margin="0,20,0,0" />
         <CollectionView Margin="0, 5, 0, 0" SelectionMode="None" ItemsSource="{Binding Cards}" SelectedItem="{Binding SelectedCard, Mode=TwoWay}" VerticalOptions="FillAndExpand">
 
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <!-- Content -->
-                    <Grid Margin="0, 10, 0, 0">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"></ColumnDefinition>
-                            <ColumnDefinition Width="20"></ColumnDefinition>
-                            <ColumnDefinition Width="100"></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
+            <CollectionView.ItemTemplate >
+                <DataTemplate >
+                    <HorizontalStackLayout Margin="5" BackgroundColor="white">
+                            <VerticalStackLayout Grid.Column="0" Grid.ColumnSpan="2" >
+                                    <HorizontalStackLayout HorizontalOptions="Center" Margin="5">
+                                    <Border Stroke="Transparent">
+                                        <Border.StrokeShape>
+                                            <RoundRectangle CornerRadius="10" />
+                                        </Border.StrokeShape>
+                                        <Label Text="{Binding Titre}" Padding="5" WidthRequest="300" HeightRequest="40" BackgroundColor="#D9D9D9" TextColor="#6F6767" FontAttributes="Bold" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center"/>
 
-                        <VerticalStackLayout Grid.Column="0" Grid.ColumnSpan="2">
-                            <Label Text="{Binding Titre}" FontAttributes="Bold" FontSize="Medium"/>
-                            <Label Text="{Binding Definition}" FontSize="Medium"/>
-                        </VerticalStackLayout>
+                                    </Border>
+                                </HorizontalStackLayout >
+                                <HorizontalStackLayout HorizontalOptions="Center" Margin="5">
+                                    <Border Stroke="Transparent">
+                                        <Border.StrokeShape>
+                                            <RoundRectangle CornerRadius="10" />
+                                        </Border.StrokeShape>
+                                        <Label Text="{Binding Definition}"  Padding="5" WidthRequest="300" HeightRequest="40" BackgroundColor="#6F6767" TextColor="#D9D9D9" FontAttributes="Bold" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center"/>
 
-                        <ImageButton Grid.Column="1" Margin="10, 0, 0, 0" Source="edit.png" WidthRequest="20" HeightRequest="20" Command="{Binding Source={x:Reference vm}, Path=EditCommand}" CommandParameter="{Binding .}"></ImageButton>
+                                    </Border>
+                                </HorizontalStackLayout>
+                            </VerticalStackLayout >
+                            <VerticalStackLayout>
+                                <ImageButton Grid.Column="1" Source="edit.png"  WidthRequest="50" HeightRequest="50" Command="{Binding Source={x:Reference vm}, Path=EditCommand}" CommandParameter="{Binding .}"/>
 
-                        <Button Grid.Column="2" Margin="0, 0, 0, 0"
-                            Text="Delete"
+                                <ImageButton Grid.Column="2" Source="delete.png"
                             Command="{Binding Source={x:Reference vm}, Path=DeleteCommand}"
-                            CommandParameter="{Binding .}"></Button>
-                    </Grid>
+                            CommandParameter="{Binding .}" WidthRequest="50" HeightRequest="50"/>
+                            </VerticalStackLayout>
+                        </HorizontalStackLayout>
+
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>

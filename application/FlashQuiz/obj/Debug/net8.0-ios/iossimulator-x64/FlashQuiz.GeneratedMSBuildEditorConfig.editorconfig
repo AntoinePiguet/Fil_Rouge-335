@@ -57,3 +57,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = FlashQuiz.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/pn01kbc/Documents/MODULE T4/P_335-Ferrari/Fil_Rouge-335/application/FlashQuiz/Views/EditCardPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FlashQuiz.Views.EditCardPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\EditCardPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\EditCardPage.xaml

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using FlashQuiz.Models;
 using FlashQuiz.Services;
+using FlashQuiz.Views;
 using Microsoft.EntityFrameworkCore;
 
 namespace FlashQuiz.ViewModels
@@ -24,13 +25,48 @@ namespace FlashQuiz.ViewModels
             Counter += incrementValue;
         }
 
+        [RelayCommand]
+        private async Task SelectRandomCard()
+        {
+            using (var dbContext = new AladdinContext())
+            {
+                var random = new Random();
+                var count = await dbContext.Cards.CountAsync();
+                
+                if (count > 0)
+                {
+                    var skip = random.Next(0, count);
+                    var randomCard = await dbContext.Cards.Skip(skip).FirstOrDefaultAsync();
+                    
+                    if (randomCard != null)
+                    {
+                        await Shell.Current.DisplayAlert(
+                            "Carte Aléatoire",
+                            $"Titre: {randomCard.Titre}\nDéfinition: {randomCard.Definition}",
+                            "OK"
+                        );
+                    }
+                }
+                else
+                {
+                    await Shell.Current.DisplayAlert(
+                        "Information",
+                        "Aucune carte disponible dans la base de données",
+                        "OK"
+                    );
+                }
+            }
+        }
+
         [ObservableProperty]
         private ObservableCollection<Card> cards = new() {};
 
         [ObservableProperty]
+        [NotifyCanExecuteChangedFor(nameof(AddCardCommand))]
         private string titre;
 
         [ObservableProperty]
+        [NotifyCanExecuteChangedFor(nameof(AddCardCommand))]
         private string definition;
 
         [RelayCommand(CanExecute = nameof(AddCardCanExecute))]
@@ -71,35 +107,24 @@ namespace FlashQuiz.ViewModels
         private async Task Edit(Card card)
         {
             Trace.WriteLine($"Editing {card}");
-
-            //Affiche un popup pour demander la modification
-            // /!\ Court-circuite MVVM mais toléré pour ne pas ajouter plus de complexité pour l'instant/!\
-            string updatedDefinition = await Shell.Current.DisplayPromptAsync(title: "Modifier ", message: "", placeholder:card.Definition);
-            string updatedTitre = await Shell.Current.DisplayPromptAsync(title: "Modifier ", message: "", placeholder: card.Titre);
-
-            //Si l'utilisateur n'appuie pas sur Cancel
-            if (updatedDefinition != null && updatedTitre != null)
+            
+            var editPage = new EditCardPage(card);
+            editPage.OnSave = async (updatedCard) =>
             {
                 using (var dbContext = new AladdinContext())
                 {
-                    //TODO : Faire la mise à jour uniquement si la définition a changé
-
                     await dbContext.Cards
-                        .Where(dbCard => dbCard.Id == card.Id)
+                        .Where(dbCard => dbCard.Id == updatedCard.Id)
                         .ExecuteUpdateAsync(setters => setters
-                                .SetProperty(dbCard => dbCard.Definition, updatedDefinition)
-                                .SetProperty(dbCard => dbCard.Titre, updatedTitre)
+                                .SetProperty(dbCard => dbCard.Definition, updatedCard.Definition)
+                                .SetProperty(dbCard => dbCard.Titre, updatedCard.Titre)
                             );
-                    /* Version "old style" moins optimale laissée à des fins pédagogiques
-                    var dbWish = dbContext.Wishes.Single(dbWish => dbWish.Id== wish.Id);
-                    dbWish.Definition = updatedDefinition;
-                    await dbContext.SaveChangesAsync();
-                    */
 
-                    //Et on rafraîchit la liste locale
                     RefreshCardsFromDB(dbContext);
                 }
-            }
+            };
+
+            await Shell.Current.Navigation.PushAsync(editPage);
         }
         [RelayCommand]
         private async Task Delete(Card card)

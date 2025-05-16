@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlashQuiz.Views.EditCardPage"
+             Title="Modifier la carte">
+
+    <VerticalStackLayout Spacing="10" Padding="20">
+        <Label Text="Titre" FontSize="Medium"/>
+        <Entry x:Name="TitreEntry" Placeholder="Entrez le titre" MinimumWidthRequest="300"/>
+        
+        <Label Text="Définition" FontSize="Medium" Margin="0,10,0,0"/>
+        <Entry x:Name="DefinitionEntry" Placeholder="Entrez la définition" MinimumWidthRequest="300"/>
+        
+        <Button Text="Enregistrer" 
+                Clicked="OnSaveClicked"
+                Margin="0,20,0,0"
+                BackgroundColor="Green"/>
+    </VerticalStackLayout>
+</ContentPage> 

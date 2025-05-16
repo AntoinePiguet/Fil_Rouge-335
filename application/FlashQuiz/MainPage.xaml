@@ -2,18 +2,17 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FlashQuiz.MainPage"
+             xmlns:ViewModels="clr-namespace:FlashQuiz.ViewModels"
              Title="MainPage">
+    <ContentPage.BindingContext>
+        <ViewModels:Mvvm1ViewModel x:Name="vm"/>
+    </ContentPage.BindingContext>
 
-    <ScrollView>
-        <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
-            <Label
-                Text="Hello, World!"
-                Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1" />
 
-        </VerticalStackLayout>
-    </ScrollView>
+
+
+    <VerticalStackLayout>
+
+    </VerticalStackLayout>
 
 </ContentPage>
