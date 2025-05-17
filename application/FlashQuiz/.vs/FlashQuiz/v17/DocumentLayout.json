@@ -42,8 +42,7 @@
               "RelativeToolTip": "AppShell.xaml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-16T09:32:22.729Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-16T09:32:22.729Z"
             },
             {
               "$type": "Document",
@@ -53,7 +52,7 @@
               "RelativeDocumentMoniker": "MainPage.xaml",
               "ToolTip": "C:\\Users\\pn01kbc\\Documents\\MODULE T4\\P_335-Ferrari\\Fil_Rouge-335\\application\\FlashQuiz\\MainPage.xaml",
               "RelativeToolTip": "MainPage.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAuwBEAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-05-16T09:30:25.987Z",
               "EditorCaption": ""
@@ -68,8 +67,7 @@
               "RelativeToolTip": "Create.xaml",
               "ViewState": "AQIAABUAAAAAAAAAAAAAADQAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-09T08:16:20.259Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T08:16:20.259Z"
             },
             {
               "$type": "Document",
@@ -81,8 +79,7 @@
               "RelativeToolTip": "List.xaml",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAADQAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-09T08:00:18.4Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T08:00:18.4Z"
             },
             {
               "$type": "Document",
@@ -94,8 +91,7 @@
               "RelativeToolTip": "ViewModels\\Mvvm1ViewModel.cs",
               "ViewState": "AQIAAFcAAAAAAAAAAAAIwGoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T07:22:26.981Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T07:22:26.981Z"
             }
           ]
         }

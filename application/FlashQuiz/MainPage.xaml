@@ -3,16 +3,90 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FlashQuiz.MainPage"
              xmlns:ViewModels="clr-namespace:FlashQuiz.ViewModels"
-             Title="MainPage">
+             Title="Quiz">
     <ContentPage.BindingContext>
         <ViewModels:Mvvm1ViewModel x:Name="vm"/>
     </ContentPage.BindingContext>
 
+    <VerticalStackLayout Spacing="32" Padding="0,40,0,0" BackgroundColor="White">
+        <Label FontSize="28" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,0,0,10">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Flash" TextColor="#4A90E2"/>
+                    <Span Text="Quiz" TextColor="#C94B8A"/>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
 
+        <Label Text="Question" FontSize="18" HorizontalOptions="Center" TextColor="#6F6767" Margin="0,0,0,8"/>
+        <Border BackgroundColor="#595757" Padding="24,18" Margin="24,0,24,0">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="32"/>
+            </Border.StrokeShape>
+            <Label x:Name="CardTitleLabel"
+                   Text="Chargement..."
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   FontSize="18"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   HorizontalTextAlignment="Center"/>
+        </Border>
 
+        <Label Text="Réponse du User" FontSize="16" HorizontalOptions="Center" TextColor="#6F6767" Margin="0,24,0,0"/>
+        <HorizontalStackLayout x:Name="UserAnswerStack" HorizontalOptions="Center" Spacing="10" IsVisible="False">
+            <Border x:Name="UserAnswerBorder" BackgroundColor="#E5E5E5" Padding="16,8">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="24"/>
+                </Border.StrokeShape>
+                <Label x:Name="UserAnswerLabel"
+                       Text=""
+                       FontAttributes="Bold"
+                       FontSize="16"
+                       TextColor="#222"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center"/>
+            </Border>
+            <Image x:Name="UserAnswerIcon" WidthRequest="32" HeightRequest="32" IsVisible="False" VerticalOptions="Center"/>
+        </HorizontalStackLayout>
 
-    <VerticalStackLayout>
+        <VerticalStackLayout x:Name="InputStack" Spacing="16" Margin="0,24,0,0">
+            <Entry x:Name="UserAnswerEntry"
+                   Placeholder="Votre réponse..."
+                   WidthRequest="320"
+                   FontAttributes="Bold"
+                   FontSize="16"
+                   HorizontalOptions="Center"
+                   BackgroundColor="#F2F2F2"
+                   TextColor="#222"
+                   HeightRequest="48"
+                   Margin="0,0,0,0"/>
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="24">
+                <Button Text="Passer" x:Name="SkipButton" Clicked="OnSkip" BackgroundColor="#F76C6C" TextColor="White" WidthRequest="140" HeightRequest="48" CornerRadius="24" FontAttributes="Bold" FontSize="16"/>
+                <Button Text="Valider" x:Name="ValidateButton" Clicked="OnValidate" BackgroundColor="#4A90E2" TextColor="White" WidthRequest="140" HeightRequest="48" CornerRadius="24" FontAttributes="Bold" FontSize="16"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
 
+        <VerticalStackLayout x:Name="ResultStack" IsVisible="False" Spacing="10" Margin="0,24,0,0">
+            <Label Text="Réponse de la carte" FontSize="16" HorizontalOptions="Center" TextColor="#6F6767"/>
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                <Border BackgroundColor="#7ED957" Padding="16,8">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="24"/>
+                    </Border.StrokeShape>
+                    <Label x:Name="CorrectAnswerLabel"
+                           Text=""
+                           FontAttributes="Bold"
+                           FontSize="16"
+                           TextColor="White"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"/>
+                </Border>
+                <Image Source="true.png" WidthRequest="32" HeightRequest="32" VerticalOptions="Center"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+        <Button Text="Suivant" x:Name="NextButton" Clicked="OnNext" BackgroundColor="#4A90E2" TextColor="White" WidthRequest="240" HeightRequest="48" CornerRadius="24" FontAttributes="Bold" FontSize="16" HorizontalOptions="Center" IsVisible="False" Margin="0,16,0,0"/>
     </VerticalStackLayout>
-
 </ContentPage>
