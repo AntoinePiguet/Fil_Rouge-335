@@ -13,7 +13,7 @@
         <VerticalStackLayout Spacing="10" BackgroundColor="#d9d9d9">
 
 
-            <CollectionView Margin="0, 5, 0, 0" SelectionMode="None" ItemsSource="{Binding Cards}" SelectedItem="{Binding SelectedCard, Mode=TwoWay}" HeightRequest="500">
+            <CollectionView Margin="0, 5, 0, 0" SelectionMode="None" ItemsSource="{Binding Cards}" SelectedItem="{Binding SelectedCard, Mode=TwoWay}" HeightRequest="900">
 
                 <CollectionView.ItemTemplate >
                     <DataTemplate >
@@ -36,6 +36,16 @@
                                             <Label Text="{Binding Definition}"  Padding="5" WidthRequest="300" HeightRequest="40" BackgroundColor="#6F6767" TextColor="#D9D9D9" FontAttributes="Bold" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center"/>
 
                                         </Border>
+                                        <Image Source="check.png" WidthRequest="32" HeightRequest="32" IsVisible="{Binding ShowCheckOnDefinition}" VerticalOptions="Center"/>
+                                    </HorizontalStackLayout>
+                                    <HorizontalStackLayout HorizontalOptions="Center" Margin="5">
+                                        <Border Stroke="Transparent">
+                                            <Border.StrokeShape>
+                                                <RoundRectangle CornerRadius="10" />
+                                            </Border.StrokeShape>
+                                            <Label Text="{Binding UserAnswer}"  Padding="5" WidthRequest="300" HeightRequest="40" BackgroundColor="#E5E5E5" TextColor="#222" FontAttributes="Bold" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                        </Border>
+                                        <Image Source="check.png" WidthRequest="32" HeightRequest="32" IsVisible="{Binding ShowCheckOnUserAnswer}" VerticalOptions="Center"/>
                                     </HorizontalStackLayout>
                                 </VerticalStackLayout >
                                 <VerticalStackLayout>

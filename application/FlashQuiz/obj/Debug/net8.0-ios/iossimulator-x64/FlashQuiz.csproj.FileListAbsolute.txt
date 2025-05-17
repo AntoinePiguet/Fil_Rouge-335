@@ -273,6 +273,7 @@ C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\Fla
 C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\bin\Debug\net8.0-ios\iossimulator-x64\libxamarin-dotnet-nativeaot.a
 C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\bin\Debug\net8.0-ios\iossimulator-x64\libxamarin-dotnet.a
 C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\bin\Debug\net8.0-ios\iossimulator-x64\libxamarin-dotnet.dylib
+C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-ios\iossimulator-x64\build-signature\signature
 C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-ios\iossimulator-x64\mauiimage.inputs
 C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-ios\iossimulator-x64\mauifont.inputs
 C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-ios\iossimulator-x64\mauisplash.inputs
@@ -295,12 +296,12 @@ C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\Fla
 C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@2x.png
 C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\Contents.json
 C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\group47.png
-C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\group45.png
-C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\edit.png
-C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\delete.png
 C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\group46.png
 C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\check.png
+C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\edit.png
+C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\delete.png
 C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\group48.png
+C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\group45.png
 C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot@3x.png
 C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot@2x.png
 C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot.png
@@ -332,4 +333,3 @@ C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\Fla
 C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-ios\iossimulator-x64\FlashQuiz.pdb
 C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-ios\iossimulator-x64\FlashQuiz.genruntimeconfig.cache
 C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-ios\iossimulator-x64\ref\FlashQuiz.dll
-C:\Users\pn01kbc\Documents\MODULE T4\P_335-Ferrari\Fil_Rouge-335\application\FlashQuiz\obj\Debug\net8.0-ios\iossimulator-x64\build-signature\signature

@@ -91,7 +91,7 @@ namespace FlashQuiz.ViewModels
         {
             RefreshCardsFromDB();
         }
-        private void RefreshCardsFromDB(AladdinContext? context=null)
+        public void RefreshCardsFromDB(AladdinContext? context=null)
         {
             Cards.Clear();
             using (var dbContext = context??new AladdinContext())
@@ -139,6 +139,31 @@ namespace FlashQuiz.ViewModels
             }
         }
 
-
+        public void SetUserAnswer(Card card, string userAnswer)
+        {
+            card.UserAnswer = userAnswer;
+            if (!string.IsNullOrEmpty(userAnswer) && card.Definition != null && userAnswer.Trim().Equals(card.Definition.Trim(), StringComparison.OrdinalIgnoreCase))
+            {
+                card.ShowCheckOnUserAnswer = true;
+                card.ShowCheckOnDefinition = false;
+            }
+            else if (!string.IsNullOrEmpty(userAnswer))
+            {
+                card.ShowCheckOnUserAnswer = false;
+                card.ShowCheckOnDefinition = true;
+            }
+            else
+            {
+                card.ShowCheckOnUserAnswer = false;
+                card.ShowCheckOnDefinition = false;
+            }
+            // Notifie le changement pour la CollectionView
+            var idx = Cards.IndexOf(card);
+            if (idx >= 0)
+            {
+                Cards.RemoveAt(idx);
+                Cards.Insert(idx, card);
+            }
+        }
     }
 }

@@ -6,4 +6,11 @@ public partial class List : ContentPage
 	{
 		InitializeComponent();
 	}
+
+	protected override void OnAppearing()
+	{
+		base.OnAppearing();
+		if (BindingContext is FlashQuiz.ViewModels.Mvvm1ViewModel vm)
+			vm.RefreshCardsFromDB();
+	}
 }
