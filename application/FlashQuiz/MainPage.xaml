@@ -84,7 +84,7 @@
                            HorizontalOptions="Center"
                            HorizontalTextAlignment="Center"/>
                 </Border>
-                <Image Source="true.png" WidthRequest="32" HeightRequest="32" VerticalOptions="Center"/>
+                <Image Source="check.png" WidthRequest="32" HeightRequest="32" VerticalOptions="Center"/>
             </HorizontalStackLayout>
         </VerticalStackLayout>
         <Button Text="Suivant" x:Name="NextButton" Clicked="OnNext" BackgroundColor="#4A90E2" TextColor="White" WidthRequest="240" HeightRequest="48" CornerRadius="24" FontAttributes="Bold" FontSize="16" HorizontalOptions="Center" IsVisible="False" Margin="0,16,0,0"/>

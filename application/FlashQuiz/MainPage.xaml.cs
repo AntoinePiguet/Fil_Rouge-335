@@ -80,7 +80,7 @@ public partial class MainPage : ContentPage
         UserAnswerBorder.BackgroundColor = isCorrect ? Color.FromArgb("#7ED957") : Color.FromArgb("#E5E5E5");
         UserAnswerLabel.TextColor = isCorrect ? Colors.White : Colors.Black;
         UserAnswerIcon.IsVisible = true;
-        UserAnswerIcon.Source = isCorrect ? "true.png" : "delete.png";
+        UserAnswerIcon.Source = isCorrect ? "check.png" : "delete.png";
         UserAnswerIcon.BackgroundColor = isCorrect ? Colors.Transparent : Color.FromArgb("#F76C6C");
         UserAnswerIcon.Margin = isCorrect ? new Thickness(0) : new Thickness(0,0,0,0);
         UserAnswerStack.IsVisible = true;
