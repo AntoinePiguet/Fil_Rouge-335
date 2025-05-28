@@ -1,4 +1,4 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using System;
 using System.Collections.Generic;
@@ -17,13 +17,28 @@ namespace FlashQuiz.ViewModels
     public partial class Mvvm1ViewModel : ObservableObject
     {
         [ObservableProperty]
-        private int counter = 0;
+        [NotifyPropertyChangedFor(nameof(QuizStats))]
+        private bool isQuizFinished = false;
 
-        [RelayCommand]
-        private void Increment(int incrementValue)
-        {
-            Counter += incrementValue;
-        }
+        [ObservableProperty]
+        [NotifyPropertyChangedFor(nameof(QuizStats))]
+        private int correctAnswers = 0;
+
+        [ObservableProperty]
+        [NotifyPropertyChangedFor(nameof(QuizStats))]
+        private int totalAnswers = 0;
+
+        [ObservableProperty]
+        [NotifyPropertyChangedFor(nameof(QuizStats))]
+        private double successRate = 0;
+
+        [ObservableProperty]
+        [NotifyPropertyChangedFor(nameof(QuizStats))]
+        private int wrongAnswers = 0;
+
+        public string QuizStats => $"Réponses correctes: {CorrectAnswers}/{TotalAnswers}\nErreurs: {WrongAnswers}\nTaux de réussite: {SuccessRate:F1}%";
+
+
 
         [RelayCommand]
         private async Task SelectRandomCard()
@@ -98,9 +113,22 @@ namespace FlashQuiz.ViewModels
             {
                 foreach (var dbCard in dbContext.Cards) 
                 {
+                    dbCard.UserAnswer = null;
+                    dbCard.ShowCheckOnDefinition = false;
+                    dbCard.ShowCheckOnUserAnswer = false;
                     Cards.Add(dbCard);
                 }
             }
+            ResetQuiz();
+        }
+
+        private void ResetQuiz()
+        {
+            IsQuizFinished = false;
+            CorrectAnswers = 0;
+            TotalAnswers = 0;
+            WrongAnswers = 0;
+            SuccessRate = 0;
         }
 
         [RelayCommand]
@@ -139,15 +167,29 @@ namespace FlashQuiz.ViewModels
             }
         }
 
-        public void SetUserAnswer(Card card, string userAnswer)
+        [RelayCommand]
+        private void SetUserAnswer(Card card)
         {
-            card.UserAnswer = userAnswer;
-            if (!string.IsNullOrEmpty(userAnswer) && card.Definition != null && userAnswer.Trim().Equals(card.Definition.Trim(), StringComparison.OrdinalIgnoreCase))
+            if (string.IsNullOrEmpty(card.UserAnswer))
             {
+                return;
+            }
+
+            // Si la carte a déjà été évaluée, on ne fait rien
+            if (card.ShowCheckOnUserAnswer || card.ShowCheckOnDefinition)
+            {
+                return;
+            }
+
+            TotalAnswers++;
+
+            if (!string.IsNullOrEmpty(card.UserAnswer) && card.Definition != null && card.UserAnswer.Trim().Equals(card.Definition.Trim(), StringComparison.OrdinalIgnoreCase))
+            {
+                CorrectAnswers++;
                 card.ShowCheckOnUserAnswer = true;
                 card.ShowCheckOnDefinition = false;
             }
-            else if (!string.IsNullOrEmpty(userAnswer))
+            else if (!string.IsNullOrEmpty(card.UserAnswer))
             {
                 card.ShowCheckOnUserAnswer = false;
                 card.ShowCheckOnDefinition = true;
@@ -156,6 +198,19 @@ namespace FlashQuiz.ViewModels
             {
                 card.ShowCheckOnUserAnswer = false;
                 card.ShowCheckOnDefinition = false;
+            }
+
+            WrongAnswers = TotalAnswers - CorrectAnswers;
+            SuccessRate = (double)CorrectAnswers / TotalAnswers * 100;
+
+            // Vérifier si toutes les cartes ont reçu une réponse
+            if (Cards.All(c => c.ShowCheckOnUserAnswer || c.ShowCheckOnDefinition))
+            {
+                IsQuizFinished = true;
+                MainThread.BeginInvokeOnMainThread(async () =>
+                {
+                    await Shell.Current.DisplayAlert("Quiz terminé!", QuizStats, "OK");
+                });
             }
             // Notifie le changement pour la CollectionView
             var idx = Cards.IndexOf(card);

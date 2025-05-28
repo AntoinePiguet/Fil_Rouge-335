@@ -1,4 +1,4 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.ComponentModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,15 +9,24 @@ namespace FlashQuiz.Models
 {
     public partial class Card : ObservableObject
     {
-        public int Id { get; set; }
-        public string? Titre { get; set; }
-        public string? Definition { get; set; }
-        public DateTime AccomplishedDate { get; set; }
+        [ObservableProperty]
+        private int id;
+
+        [ObservableProperty]
+        private string? titre;
+
+        [ObservableProperty]
+        private string? definition;
+
+        [ObservableProperty]
+        private DateTime accomplishedDate;
 
         [ObservableProperty]
         private string? userAnswer;
+
         [ObservableProperty]
         private bool showCheckOnUserAnswer;
+
         [ObservableProperty]
         private bool showCheckOnDefinition;
 
